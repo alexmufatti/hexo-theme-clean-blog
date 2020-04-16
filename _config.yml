@@ -4,7 +4,7 @@ menu:
   Archives: /archives
   Tags: /tags
   Github:
-    url: https://github.com/klugjo/hexo-theme-clean-blog
+    url: https://github.com/alexmufatti
     icon: github
   Strava:
     url: https://www.strava.com/athletes/12353579
@@ -45,6 +45,6 @@ facebook_url:
 github_url: https://github.com/alexmufatti
 gitlab_url:
 linkedin_url: https://www.linkedin.com/in/amufatti/
-mailto: me@alexmufatti.it
+mailto: alex@codeandrun.it
 instagram_url: https://www.instagram.com/alexmufatti
-stackoverflow_url: https://stackoverflow.com/users/606622/alex-mufattin
+stackoverflow_url: https://stackoverflow.com/users/606622/alex-mufatti
