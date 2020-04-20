@@ -4,7 +4,8 @@
 body
   @extend .serif
   font-size 20px
-  color gray-dark
+  color f-color
+  background-color b-color
 
 p
   line-height 1.5
@@ -19,7 +20,7 @@ h1, h2, h3, h4, h5, h6
   font-weight 800
 
 a
-  color gray-dark
+  color f-color
   &:hover, &:focus
     color brand-primary
 a img
@@ -30,10 +31,10 @@ hr.small
   max-width 100px
   margin 15px auto
   border-width 4px
-  border-color white
+  border-color b-color
 
 td
-  border: 1px solid black
+  border: 1px solid f-color
   padding: 5px
 
 th
@@ -42,6 +43,9 @@ th
 
 .fa-stack-1x, .fa-stack-2x
   bottom 0
+
+.fa-inverse
+  color b-color
 
 .navbar-custom
   position absolute
@@ -64,14 +68,14 @@ th
     background transparent
     border-bottom 1px solid transparent
     .navbar-brand
-      color white
+      color f-color
       padding 20px
       &:hover, &:focus
         color white-faded
     .nav
       li
         a
-          color white
+          color f-color
           padding 20px
           &:hover, &:focus
             color white-faded
@@ -97,13 +101,13 @@ th
       -moz-transition -moz-transform 0.3s
       transition transform 0.3s
       .navbar-brand
-        color gray-dark
+        color f-color
         &:hover, &:focus
           color brand-primary
       .nav
         li
           a
-            color gray-dark
+            color f-color
             &:hover, &:focus
               color brand-primary
     &.is-visible
@@ -121,9 +125,9 @@ th
   @extend .background-cover
   margin-bottom 50px
   .site-heading, .post-heading, .page-heading
-    background: #80808080;
+    background: gray-overlay;
     padding 100px 20px 50px 20px
-    color white
+    color f-color
     @media only screen and (min-width: 768px)
       padding 150px 30px
     &.archives
@@ -161,7 +165,7 @@ th
       font-weight 300
       font-size 20px
       a
-        color white
+        color b-color
     @media only screen and (min-width: 768px)
       h1
         font-size 55px
@@ -171,15 +175,15 @@ th
 .post-preview
   .read-more
     float: right;
-    color: #808080;
+    color: gray;
     margin-top: 10px;
   .clear
     clear: both;
   > a
-    color gray-dark
+    color brand-primary
     &:hover, &:focus
       text-decoration none
-      color brand-primary
+      color f-color
     > .post-title
       font-size 30px
       margin-top 30px
@@ -199,7 +203,7 @@ th
       font-size 16px
     > a
       text-decoration none
-      color gray-dark
+      color f-color
       &:hover, &:focus
         color brand-primary
         text-decoration underline
@@ -312,7 +316,7 @@ form .row:first-child .floating-label-form-group
   &:hover, &:focus
     background-color brand-primary
     border 1px solid brand-primary
-    color white
+    color b-color
 
 .pager
   margin 20px 0 0
@@ -324,34 +328,34 @@ form .row:first-child .floating-label-form-group
       font-weight 800
       letter-spacing 1px
       padding 15px 25px
-      background-color white
+      background-color b-color
       border-radius 0
     > a:hover, > a:focus
-      color white
+      color b-color
       background-color brand-primary
       border 1px solid brand-primary
   .disabled
     > a, > a:hover, > a:focus, > span
       color gray
-      background-color gray-dark
+      background-color f-color
       cursor not-allowed
 
 ::-moz-selection
-  color white
+  color b-color
   text-shadow none
   background brand-primary
 
 ::selection
-  color white
+  color b-color
   text-shadow none
   background brand-primary
 
 img::selection
-  color white
+  color b-color
   background transparent
 
 img::-moz-selection
-  color white
+  color b-color
   background transparent
 
 body
