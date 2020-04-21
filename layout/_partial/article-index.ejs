@@ -9,12 +9,11 @@
             </h3>
         <% } %>
     </a>
-        <% if (item.excerpt && item.excerpt.length) { %>
-                <div><%- item.excerpt -%></div>
-        <a href="<%- config.root %><%- item.path %>" class="read-more">Read more...</a>
-        <div class="clear"></div>
-        <% } %>
-
+    <% if (item.excerpt && item.excerpt.length) { %>
+        <div><%- item.excerpt -%></div>
+        <a href="<%- config.root %><%- item.path %>"
+           class="read-more">Read more...</a>
+    <% } %>
 
     <p class="post-meta">
         <!-- Date and Author -->
@@ -23,5 +22,6 @@
         <% } %>
         <%= item.date.format(config.date_format) %>
     </p>
+    <div class="clear"></div>
 </div>
 <hr>
